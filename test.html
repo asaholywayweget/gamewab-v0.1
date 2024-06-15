@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>data</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        .btnNow {
+            background-color: yellow; /* 例如，按鈕變色的樣式 */
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.sel li').click(function(){
+                // 检查当前元素是否已经具有btnNow class
+                if($(this).hasClass('btnNow')) {
+                    // 如果有，则移除该class
+                    $(this).removeClass('btnNow');
+                } else {
+                    // 如果没有，则先移除所有li元素的btnNow class
+                    $('.sel li').removeClass('btnNow');
+                    // 然后为当前点击的元素添加btnNow class
+                    $(this).addClass('btnNow');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="sel">
+    <ul>
+        <li>按鈕1</li>
+        <li>按鈕2</li>
+        <li>按鈕3</li>
+    </ul>
+</div>
+</body>
+</html>

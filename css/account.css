@@ -1,0 +1,88 @@
+ 
+    body {
+        height: 600px;
+        width: 1300px;
+        font-family: Arial, sans-serif;
+        
+        padding: 0;
+      }
+      
+      .container {
+        position: relative;
+        height: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+      }
+      
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      
+      .account-settings {
+        position: relative;
+        z-index: 1;
+        color: white; /* 將文字顏色設置為白色 */
+        padding: 30px; /* 内边距增加 1.5 倍 */
+        border-radius: 7.5px; /* 边框半径增加 1.5 倍 */
+        max-width: 750px; /* 最大宽度增加 1.5 倍 */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scale(1.6); /* 放大 1.5 倍 */
+        transform-origin: top left; /* 设置缩放原点为左上角 */
+        margin-left: -500px; /* 向左偏移 100 像素 */
+        margin-top: -175px; /* 向左偏移 100 像素 */
+      }
+      
+      .title {
+        text-align: center;
+        margin-bottom: 30px; /* 标题下边距增加 1.5 倍 */
+      }
+      
+      .setting {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px; /* 设置项目间距增加 1.5 倍 */
+      }
+      
+      .setting-label {
+        text-align: left;
+        flex-basis: 20%;
+      }
+      
+      .setting-input {
+        flex-basis: 60%;
+      }
+      
+      .setting-input input {
+        width: 100%;
+        text-align: center;
+        font-size: 24px; /* 输入框字体大小增加 1.5 倍 */
+        padding: 15px; /* 输入框内边距增加 1.5 倍 */
+        color: white; /* 將輸入框中的文字顏色設置為白色 */
+      }
+      .setting-input input::placeholder {
+        color: white; /* 將輸入框佔位符文字顏色設置為白色 */
+        opacity: 0.7; /* 可選,將佔位符文字設置為半透明 */
+      }
+      
+      .setting-button {
+        flex-basis: 20%;
+        text-align: right;
+        color: white; /* 將輸入框中的文字顏色設置為白色 */
+        
+      }
+      
+      .setting-button button {
+        font-size: 24px; /* 按钮字体大小增加 1.5 倍 */
+        padding: 15px 30px; /* 按钮内边距增加 1.5 倍 */
+      }

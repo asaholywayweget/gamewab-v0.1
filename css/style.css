@@ -1,0 +1,122 @@
+@import url('reset.css');
+
+body{
+	line-height: 1.6;
+	font-family: Verdana, Microsoft JhengHei;
+	padding-top: 100px;
+  background-color: gray;
+}
+
+.sel{
+  width: 1600px;
+  height: 100px;
+  margin: 0 auto;
+  border: 2px solid #e5e5e5;
+  background-image: linear-gradient(180deg, #fff 0%, #e5e5e5 98%, #fff 98%, #fff 100%);
+  display: flex;
+  
+}
+
+.sel li{
+  flex-grow: 1;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  border-right: 1px solid #bbbaba;
+}
+
+.sel li:hover{
+  background-color: #666;
+  color: white;
+}
+
+.blockWrapper{
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #bbbaba;
+  position: relative;
+}
+
+.blocks{
+  display: flex;
+  transition: all .5s;
+  position: relative;
+  left: 0;
+  
+}
+
+iframe {
+  width: 1600px;
+  height: 600px;
+  border: none; /* 隐藏iframe的边框 */
+  overflow: hidden; /* 隐藏滚动条 */
+}
+
+.block li{
+  flex-shrink: 0;
+  
+}
+
+
+/*-.block0{
+  min-height: 600px;
+  min-width: 1600px;
+  
+}
+
+.block1{
+  min-height: 600px;
+  min-width: 1600px;
+  
+}
+
+.block2{
+  min-height: 600px;
+  min-width: 1600px;
+}
+
+.block3{
+  min-height: 600px;
+  min-width: 1600px;
+}
+
+.block4{
+  min-height: 600px;
+  min-width: 1600px;
+}
+
+.block5{
+  min-height: 600px;
+  min-width: 1600px;
+}
+-*/
+.btnNow{
+  background-color: #666;
+  color: white;
+}
+
+
+/* Prevent text selection */
+.sel .btn1 ,
+.sel .btn2 ,
+.sel .btn3 ,
+.sel .btn4 ,
+.sel .btn5  {
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

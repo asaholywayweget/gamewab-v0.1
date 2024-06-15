@@ -1,0 +1,105 @@
+@import url('reset.css');
+
+body {
+    line-height: 1.6;
+    font-family: Verdana, Microsoft JhengHei;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*.navigator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    box-sizing: border-box;
+}*/
+
+.navigator-data {
+    flex: 1 1 300px;
+    max-height: 600px; /* 设置最大高度 */
+    max-width: 300px;
+    overflow-y: auto; /* 垂直滚动 */
+    scrollbar-width: none; /* Firefox 隐藏滚动条 */
+}
+
+/* 隐藏滚动条 - Webkit 浏览器 */
+.navigator-data::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.navigator-data li {
+    list-style-type: none;
+    margin: 5px 0;
+    background-image: linear-gradient(180deg, #fff 0%, #e5e5e5 98%, #fff 98%, #fff 100%);
+}
+
+
+.data-navWrapper{
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 2; /* 確保模塊化選單容器具有較高的z-index值 */
+  }
+
+
+
+.data-nav {
+    display: block;
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.data-navs {
+    display: flex;
+    flex-direction: column; /* 改为垂直方向 */
+    transition: all .5s;
+    position: relative;
+    top: 0; /* 改为使用 top 进行垂直位移 */
+  }
+
+    
+
+.navigator-data li :hover{
+    background-color: #666;
+    color: white;
+  }
+
+
+  .container {
+    display: flex;
+    align-items: flex-start; /* 根据需要调整对齐方式 */
+  }
+  
+ 
+  
+  iframe {
+    height: 600px;
+    width: 1300px;
+    z-index: 1; /* 確保iframe容器具有較低的z-index值 */
+  }
+
+  
+  
+  .btnNow2{
+    background-color: #666;
+    color: white;
+  }
+
+  @media screen and (max-width: 1600px) {
+    data-navWrapper {
+      width: 100%; /* 讓元素佔據整個寬度 */
+      margin: 0 auto;
+    }
+  }
